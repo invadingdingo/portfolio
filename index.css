@@ -34,10 +34,11 @@
     --line-height-normal: 1.7;
     --line-height-small: 1.2;
 
-    --black: #000;
-    --pink: #ff3258;
+    --black: #000000;
+    --pink: #566815;
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
+    --nav_hover: #780e5d;
 
 
     --container-max-width: 1180px;
@@ -336,8 +337,6 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .nav {
-    display: flex;
-    justify-content: flex-end;
     padding: var(--gutter-normal) 0;
 }
 
@@ -390,13 +389,13 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .nav__link:hover {
-    color: var(--pink);
+    color: var(--nav_hover);
 }
 
 .nav__link:hover::after {
     right: 0;
     height: 2px;
-    background: var(--pink);
+    background: var(--nav_hover);
 }
 
 /* --------------------------------------- */
@@ -404,9 +403,10 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .header {
-    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
-        url('./images/header.jpg');
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 30%, rgb(91, 119, 13) 100%);
     height: 100vh;
+    margin-left: -30%;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -417,6 +417,7 @@ body:not(.user-is-tabbing) a:focus {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    transform: translateX(100%);
 }
 
 .header__text p {
@@ -424,6 +425,21 @@ body:not(.user-is-tabbing) a:focus {
     max-width: var(--container-medium-width);
     font-family: 'Jost', sans-serif;
     font-size: var(--font-size-medium);
+}
+
+.child_inline_block {
+    display: inline-block;
+}
+
+.profile_image {
+    margin-right: 0%;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-30%);
+    border-radius: 100%;
+    object-fit: cover;
+    width: 500px;
+    height: 500px;
 }
 
 @media(max-width: 500px) {
@@ -502,32 +518,6 @@ body:not(.user-is-tabbing) a:focus {
 @media(max-width: 900px) {
     .work__code {
         height: 4rem;
-    }
-}
-
-/* --------------------------------------- */
-/* ----- Clients ----- */
-/* --------------------------------------- */
-
-.client__logos {
-    display: flex;
-    justify-content: space-between;
-    filter: invert(100%) grayscale(100%) opacity(.8);
-}
-
-.client__logo {
-    height: 6.5rem;
-    max-width: 18rem;
-}
-
-@media(max-width: 1240px) {
-    .client__logos {
-        overflow-x: scroll;
-        padding: var(--gutter-normal);
-    }
-
-    .client__logo:not(:last-of-type) {
-        margin-right: var(--gutter-medium);
     }
 }
 
