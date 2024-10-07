@@ -1,284 +1,194 @@
-<!-- 
-  Hello 😊.
-
-  .This template is designed and developed by Nisar Hassan Naqvi
-  for anyone to use for free or customize the way they like.
-
-  Github Repo: https://github.com/nisarhassan12/portfolio-template/
-  My Website: https://nisar.dev
-
-  For business & inquires, contact me => syednisarhassan12@gmail.com
--->
-
-<!--
-  Follow the instructions written in comments to create your stunning portfolio
--->
-
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
-
-  <!-- Put your site title here -->
-  <title>
-    Samuel Everett
-  </title>
-
-  <meta http-equiv='cache-control' content='no-cache'> 
-  <meta http-equiv='expires' content='0'> 
-  <meta http-equiv='pragma' content='no-cache'>
-  
-  <meta name="description" content="Game Developer based in Biloxi, Mississippi.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="Samuel Everett, Unity, Godot, Game Development, C#, C++, C, Python, GDScript, Blender, VR, MR, XR, AR, Programmer, Game Developer, System Designer, Coder, Coding, Mechanics, Game Mechanics" />
-  <meta property="og:image" content="./images/link_embed.png" name="image">
-  <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpage</title>
 </head>
 
 <body>
 
-  <!-- ***** Header ***** -->
-
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">work</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">about</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header__text-box row">
-
-        <img class="profile_image child_inline_block" src="images/samuel-everett.jpeg">
-        <div class="header__text child_inline_block">
-          <h1 class="heading-primary">
-            <!-- Replace the following name with your name -->
-            <span>samuel everett</span>
-          </h1>
-          <!-- Put a small paragraph about yourself -->
-          <p>Game developer based in Biloxi, Mississippi.</p>
-          <a href="#contact" class="btn btn--pink">get in touch</a>
-
-      </div>
-    </div>
-  </header>
-
-  <main role="main">
-
-    <!-- ***** Work ***** -->
-
-    <section class="work" id="work">
-      <div class="row">
-        <h2>my work</h2>
-        <div class="work__boxes">
-
-          <!-- Each div with the work__box class is a project. -->
-
-          <!-- beatZONE -->
-          <div class="work__box">
-            <div class="work__text">
-              <h3>beatZONE</h3>
-              <p>
-                beatZONE is a (successful!) attempt at something rhythm based. I loved the 
-                idea of a boss fight where the bosses attacks are timed to the music in the game,
-                so taking that idea, and the theme for the jam (<i>limited</i>), me and a friend developed
-                beatZONE. We implemented the theme by only allowing the player to shoot while in a designated
-                zone.
-                <br><br>
-                beatZONE was developed for Bullet Hell Jam 2023 in a week, scoring 29th place overall.
-              </p>
-              <ul class="work__list">
-                <li>Unity</li>
-                <li>C#</li>
-                <li>Ableton</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://invadingdingo.itch.io/beatzone" target="_blank" class="link__text">
-                  play in browser <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/invadingdingo/bullet-hell-jam-2023" title="view source code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img class="work__image" src="./images/project1-2.gif" style="border: 1px solid rgba(244, 0, 81, 0.1);background-size: cover; height: 100%; width: 100%">
-            </div>
-          </div>
-
-          <!-- RIBBIT -->
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Choice-based Dialogue System</h3>
-              <p>
-                This is for a game I've been working on with a team called Ribbit. The dialogue system uses a node/branch structure
-                to navigate between dialogue nodes. Choices determine the next visited node. 
-                <br><br>
-                The game is totally unfinished, but there is a demo linked below where you can see the dialogue system (and a few other things I developed) in action!
-              </p>
-              <ul class="work__list">
-                <li>Godot</li>
-                <li>GDScript</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://simplepiggamesofficial.itch.io/ribbit" class="link__text">
-                  play <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/Coop-Troop-47/RIBBIT-SIMPLE-PIG-GAMES/tree/main/Scripts/DialogueSystem">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img style="border: 1px solid rgba(0, 216, 244, 0.1); background-size: cover; height: 100%;" src="./images/project2.gif" class="work__image" alt="Project 2" />
-            </div>
-          </div>
-
-          <!-- Difference -->
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Difference</h3>
-              <p>
-                Difference is a fun take on the classic spot-the-difference genre. 
-                I developed it shortly after playing Inscryption, and really wanted to recreate
-                the movement in that game (3D grid-based). The game is largely unfinished, but the
-                movement mechanic works flawlessly! 
-                <br><br>
-                Unfortunately, I began developing this right around 
-                when I started working a new job, so it fell to the wayside. That said, I am very proud 
-                of the progress I made on it and solved a fun problem while making it. 
-              </p>
-              <ul class="work__list">
-                <li>Unity</li>
-                <li>C#</li>
-                <li>A LOT of 3D math.</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://invadingdingo.itch.io/difference" class="link__text">
-                  play <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/invadingdingo/difference">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img style="border: 1px solid rgba(244, 114, 0, 0.235); background-size: cover; height: 100%;" src="./images/project3.gif" class="work__image" alt="Project 3" />
-            </div>
-          </div>
+    <!-- Nav Bar -->
+    <div class="navbar">
+        <!-- Name on navbar -->
+        <div class="navbar-name">
+            <h1>Samuel Everett //</h1>
+            <h2>  Game developer and systems programmer.</h2>
         </div>
-      </div>
-    </section>
 
-    <section class="about" id="about">
-      <div class="row">
-        <h2>about me</h2>
-        <div class="about__content">
-
-          <!-- Text -->
-          <div class="about__text child_inline_block">
-            <!-- Replace the below paragraph with info about yourself -->
-            <p>
-              You've seen some of my work, so I guess I should introduce myself. I'm Samuel Everett. I've been making
-              games ever since I can remember. I knew from middle school that I wanted to do something with computers, but I wanted my work to matter. 
-              I want to make games that people can express emotions with, games that will find a place in the heart of the player. 
-              <br><br>
-              Unfortunately, writing isn't one of my strong suits. Instead, I stick with creating mechanics. I find endless
-              joy in creating inventive and (hopefully!) fun mechanics that the player won't grow bored of after the thousandth
-              time of using.
-              <br><br>
-              In addition to that, I have pretty extensive knowledge of 3D modeling, animation, and music creation. I did not
-              show any of those skills here, but if you want to see them, totally feel free to reach out! 
-            </p>
-            <!-- Provide a link to your resume -->
-            <a href="https://drive.google.com/file/d/1m6eZZXi9Qs2i3heAmbcjAq0YjzjcYuIk/view?usp=drive_link" target="_blank" class="btn">My Resume</a>
-          </div>
-
-          <!-- Image -->
-          <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/about_me.jpeg" alt="" />
-          </div>
+        <!-- Links on navbar -->
+        <!--
+        <div class="navbar-links">
+            <nav>
+                <a href="/html/">HTML</a> |
+                <a href="/css/">CSS</a> |
+                <a href="/js/">JavaScript</a> |
+                <a href="/python/">Python</a>
+            </nav>
         </div>
-      </div>
-    </section>
-  </main>
+        -->
+    </div>
 
-  <!-- ***** Contact ***** -->
+    <!-- About Me -->
+    <div class="about-me-container">
+        <div class="about-me">
 
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2>contact</h2>
-      <div class="contact__info">
-        <p>
-          Are you looking for someone to design complex systems or mechanics for your game?
-          Want to ask questions? Just say "Hi!", or talk about your favorite Metroidvania?
-          Send me an email! I'm quick to respond!
-
+            <h1>SAMUEL EVERETT</h1>
+            <h2>MECHANICS PROGRAMMER / SYSTEM DEVELOPER</h2>
+            <p>Hi! I'm Samuel. I've been working in game development for over 7 years now, and until recently, taught Unity
+            and VR/XR development at a local community college. I hold a BS in computer science.
+            <br><br>Below, you can find my portfolio as well as information to contact me and my resume. 
         </p>
-        <!-- Replace the email with yours -->
-        <a href="mailto:samueleverett138@yahoo.com" class="btn">samueleverett138@yahoo.com</a>
-      </div>
+
+        </div>
+
+        <div class="ghost-animation"></div>
+        <div class="fireflies"></div>
+
+      
+
     </div>
-  </section>
+    <script src="fireflies.js"></script>
 
-  <!-- ***** Footer ***** -->
+    <!-- My Work -->
+    <div class="my-work">
+        <h3>MY WORK</h3>
 
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      <!-- Update the links to point to your accounts -->
-      <ul class="footer__social-links">
-        <!--<li class="footer__social-link-item">
-          <a href="https://twitter.com/nisarhassan12/" title="Link to Twitter Profile">
-            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
-          </a>
-        </li> -->
-        <li class="footer__social-link-item">
-          <a href="https://github.com/invadingdingo" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-        <!--<li class="footer__social-link-item">
-          <a href="https://codepen.io/nisar_hassan" title="Link to Codepen Profile">
-            <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
-          </a>
-        </li>-->
-        <li class="footer__social-link-item">
-          <a href=https://www.linkedin.com/in/samuelneverett/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
-      </ul>
 
-      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
-      <p>
-        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
-      </p>
-      <div class="footer__github-buttons">
-        <iframe
-          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
-          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
-        </iframe>
-      </div>
+        <!-- BEATZONE -->
+        <div class="my-work-entry">
+            <div class="my-work-entry-text">
+                <h1>beatZONE</h1>
+                beatZONE is a (successful!) attempt at something rhythm based. I loved the idea of a boss fight where the bosses attacks are timed to the music in the game, so taking that idea, and the theme for the jam (limited), me and a friend developed beatZONE. We implemented the theme by only allowing the player to shoot while in a designated zone.
+                beatZONE was developed for Bullet Hell Jam 2023 in a week, scoring 29th place overall.
+
+                <ul>
+                    <li>Unity</li>
+                    <li>C#</li>
+                    <li>Ableton</li>
+                </ul>
+
+                <div class="link-list">
+                    <a href="https://invadingdingo.itch.io/beatzone" title="play game" target="_blank" class="image-button itch"></a>
+                    <a href="https://github.com/invadingdingo/bullet-hell-jam-2023" title="view source code" target="_blank" class="image-button github"></a>
+                </div>
+            </div>
+            <div class="my-work-entry-slideshow" id="slideshow1">
+
+                <img class="my-work-entry-image" src="./images/beatZONE/logo.png">
+                <img class="my-work-entry-image" src="./images/beatZONE/1.gif">
+                <img class="my-work-entry-image" src="./images/beatZONE/2.gif">
+
+                <div class="slideshow-controls">
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow1')">&#10094;</a>    
+                    <a class="next" onclick="changeSlide(1, 'slideshow1')">&#10095;</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-work-spacer"></div>
+
+        <!-- RIBBIT  -->
+        <div class="my-work-entry">
+            <div class="my-work-entry-text">
+                <h1>RIBBIT - Choice Based Dialogue</h1>
+                This is for a game I've been working on with a team called Ribbit. The dialogue system uses a node/branch structure to navigate between dialogue nodes. Choices determine the next visited node.
+                The game is totally unfinished, but there is a demo linked below where you can see the dialogue system (and a few other things I developed) in action!
+
+                <ul>
+                    <li>Godot</li>
+                    <li>GDScript</li>
+                </ul>
+
+                <div class="link-list">
+                    <a href="https://simplepiggamesofficial.itch.io/ribbit" title="play game" target="_blank" class="image-button itch"></a>
+                    <a href="https://github.com/Coop-Troop-47/RIBBIT-SIMPLE-PIG-GAMES/tree/main/Scripts/DialogueSystem" title="view source code" target="_blank" class="image-button github"></a>
+                </div>
+            </div>
+            <div class="my-work-entry-slideshow" id="slideshow2">
+
+                <img class="my-work-entry-image" src="./images/RIBBIT/logo.gif">
+                <img class="my-work-entry-image" src="./images/RIBBIT/1.gif">
+
+                <div class="slideshow-controls">
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow2')">&#10094;</a>    
+                    <a class="next" onclick="changeSlide(1, 'slideshow2')">&#10095;</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-work-spacer"></div>
+
+        <!-- Difference  -->
+        <div class="my-work-entry">
+            <div class="my-work-entry-text">
+                <h1>Difference</h1>
+                Difference is a fun take on the classic spot-the-difference genre. I developed it shortly after playing Inscryption, and really wanted to recreate the movement in that game (3D grid-based). The game is largely unfinished, but the movement mechanic works flawlessly!
+                Unfortunately, I began developing this right around when I started working a new job, so it fell to the wayside. That said, I am very proud of the progress I made on it and solved a fun problem while making it.
+
+                <ul>
+                    <li>Unity</li>
+                    <li>C#</li>
+                    <li>A LOT of 3D Math</li>
+                </ul>
+
+                <div class="link-list">
+                    <a href="https://invadingdingo.itch.io/difference" title="play game" target="_blank" class="image-button itch"></a>
+                    <a href="https://github.com/invadingdingo/difference" title="view source code" target="_blank" class="image-button github"></a>
+                </div>
+            </div>
+            <div class="my-work-entry-slideshow" id="slideshow3">
+
+                <img class="my-work-entry-image" src="./images/Difference/logo.png">
+                <img class="my-work-entry-image" src="./images/Difference/1.gif">
+
+                <div class="slideshow-controls">
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow3')">&#10094;</a>    
+                    <a class="next" onclick="changeSlide(1, 'slideshow3')">&#10095;</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-work-spacer"></div>
+
+        <script src="slideshow.js"></script>
     </div>
-  </footer>
 
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-  </a>
-  <script src="./index.js"></script>
+    <!-- Divider -->
+    <hr>
+
+    <!-- Contact -->
+    <div class="contact-container">
+        <h3>CONTACT ME</h3>
+        <div class="contact">
+            <img class="contact-image" src="./images/about_me.jpeg">
+            <div class="contact-text">
+                If you like what you've seen, feel free to check out my resume, which is linked below. If you have questions, I've provided my LinkedIn and Email. Both of these work great for getting in touch with me!
+                <br>
+                <br>
+                <div class="contact-buttons">
+                    <a href="mailto:samueleverett138@yahoo.com" class="contact-email" target="_blank">samueleverett138@yahoo.com</a>
+                    <a href="https://drive.google.com/file/d/1m6eZZXi9Qs2i3heAmbcjAq0YjzjcYuIk/view" class="contact-resume" target="_blank">Resume</a>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
 </body>
+
+<footer>
+    <div class="footer-links">
+        <a href="https://www.linkedin.com/in/samuelneverett/" class="footer-link footer-linkedin" target="_blank"></a>
+        <a href="https://github.com/invadingdingo" class="footer-link footer-github" target="_blank"></a>
+        <a href="https://invadingdingo.itch.io" class="footer-link footer-itchio" target="_blank"></a>
+    </div>
+</footer>
 
 </html>
