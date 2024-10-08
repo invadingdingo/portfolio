@@ -415,6 +415,11 @@ hr {
     .next, .prev {
         font-size: 30px;
     }
+
+    .my-work-spacer {
+        height: 50px;
+    }
+
 }
 
 /*//// Contact Me ////*/
