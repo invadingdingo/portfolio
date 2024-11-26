@@ -34,3 +34,4 @@ function showSlides(n, containerId) {
 initSlides('slideshow1');
 initSlides('slideshow2');
 initSlides('slideshow3');
+initSlides('slideshow4');
